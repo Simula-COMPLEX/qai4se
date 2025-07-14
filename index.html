@@ -3,38 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>QAI4SE</title>
+  <title>QAI4SE – Quantum AI for Software Engineering</title>
   <style>
+    :root {
+      --theme-color: #ff6600;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf5;
       color: #333;
     }
+
     header {
-      background: #003366;
+      background-color: var(--theme-color);
       color: white;
-      padding: 1rem 2rem;
+      padding: 2rem;
       text-align: center;
     }
-    main {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    h1 {
+
+    header h1 {
+      margin: 0;
       font-size: 2.5rem;
-      margin-bottom: 0.5rem;
     }
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
     }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    .work-card {
+      border: 1px solid #ffd8b3;
+      border-left: 5px solid var(--theme-color);
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 5px;
+      background-color: #fff6ed;
+    }
+
+    .work-card h3 {
+      margin: 0 0 0.5rem;
+    }
+
+    .work-card img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    a {
+      color: var(--theme-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
-      background: #eee;
-      margin-top: 3rem;
+      background-color: #f2f2f2;
+      margin-top: 4rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -42,30 +86,35 @@
 
   <header>
     <h1>QAI4SE</h1>
-    <p>Quantum AI for Software Engineering</p>
+    <p>Quantum Artificial Intelligence for Software Engineering</p>
+    <p><strong>Simula Research Laboratory – ComplexSE Department</strong></p>
   </header>
 
   <main>
-    <h2>About the Project</h2>
-    <p>
-      QAI4SE explores the intersection of quantum computing, artificial intelligence, and software engineering. 
-      Our goal is to leverage quantum-enhanced AI methods to solve complex problems in software analysis, testing, and optimization.
-    </p>
+    <section>
+      <h2>About</h2>
+      <p>
+        QAI4SE is a collection of research works exploring how quantum-enhanced AI can be applied to various challenges in software engineering. From test optimization to defect prediction, this website showcases applications, publications, and tools developed under the Simula ComplexSE department.
+      </p>
+    </section>
 
-    <h2>Who We Are</h2>
-    <p>
-      This project is developed under the <strong>Simula Complex Systems</strong> research group. 
-      We collaborate across disciplines to bring the power of quantum technology into practical SE applications.
-    </p>
+    <section>
+      <h2>Our Works</h2>
 
-    <h2>Contact</h2>
-    <p>
-      Visit our GitHub repository or reach out via email for collaboration opportunities.
-    </p>
+      <div class="work-card">
+        <h3>📄 Example Paper Title Here</h3>
+        <p><strong>Authors:</strong> Your Name, Collaborator Name</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/simula-complex/example-project" target="_blank">View Project</a></p>
+        <img src="images/example-graph.png" alt="Overview graph of the work">
+      </div>
+
+      <!-- Copy and paste more .work-card blocks below for each of your works -->
+
+    </section>
   </main>
 
   <footer>
-    &copy; 2025 Simula Complex Systems | QAI4SE
+    &copy; 2025 Simula Research Laboratory | ComplexSE | QAI4SE
   </footer>
 
 </body>
