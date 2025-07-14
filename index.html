@@ -59,6 +59,32 @@ header::after {
   border-radius: 2px;
 }
 
+.presenter-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.presenter-card {
+  text-align: center;
+  padding: 1rem;
+  background-color: #fff6ed;
+  border-left: 5px solid var(--theme-color);
+  border-radius: 8px;
+  width: 200px;
+}
+
+.presenter-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid var(--theme-color);
+  margin-bottom: 0.5rem;
+}
+
+
     main {
       max-width: 1000px;
       margin: 2rem auto;
@@ -141,6 +167,21 @@ header::after {
     </li>
   </ul>
 </section>
+
+<section>
+  <h2>Tutorial Presenters</h2>
+  <div class="presenter-grid">
+        <div class="presenter-card">
+      <img src="image/shaukat.png" alt="Shaukat Ali">
+      <p><strong><a href="https://www.simula.no/people/shaukat" target="_blank">Shaukat Ali</a></strong></p>
+    </div>
+    <div class="presenter-card">
+      <img src="image/xinyi.png" alt="Xinyi Wang">
+      <p><strong><a href="https://www.simula.no/people/xinyi" target="_blank">Xinyi Wang</a></strong></p>
+    </div>
+  </div>
+</section>
+
 
     <section>
       <h2>Our Works</h2>
